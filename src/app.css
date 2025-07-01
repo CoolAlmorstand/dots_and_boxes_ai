@@ -1,0 +1,100 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Inter';
+  font-weight: 700;
+}
+
+h1 {font-size: 3.366rem; /* 53.92px */}
+
+h2 {font-size: 2.525rem; /* 40.32px */}
+
+h3 {font-size: 1.894rem; /* 30.24px */}
+
+h4 {font-size: 1.421rem; /* 22.72px */}
+
+h5 {font-size: 1.066rem; /* 17.12px */}
+
+small {font-size: 0.600rem; /* 9.6px */}
+
+:root {
+  --text-50: hsl(240, 4%, 95%);
+  --text-100: hsl(240, 2%, 90%);
+  --text-200: hsl(240, 4%, 80%);
+  --text-300: hsl(240, 3%, 70%);
+  --text-400: hsl(240, 3%, 60%);
+  --text-500: hsl(240, 3%, 50%);
+  --text-600: hsl(240, 3%, 40%);
+  --text-700: hsl(240, 3%, 30%);
+  --text-800: hsl(240, 4%, 20%);
+  --text-900: hsl(240, 2%, 10%);
+  --text-950: hsl(240, 4%, 5%);
+  
+  --background-50: hsl(204, 20%, 95%);
+  --background-100: hsl(207, 18%, 90%);
+  --background-200: hsl(204, 20%, 80%);
+  --background-300: hsl(205, 19%, 70%);
+  --background-400: hsl(204, 19%, 60%);
+  --background-500: hsl(204, 19%, 50%);
+  --background-600: hsl(204, 19%, 40%);
+  --background-700: hsl(205, 19%, 30%);
+  --background-800: hsl(204, 20%, 20%);
+  --background-900: hsl(207, 18%, 10%);
+  --background-950: hsl(204, 20%, 5%);
+  
+  --primary-50: hsl(204, 38%, 95%);
+  --primary-100: hsl(208, 37%, 90%);
+  --primary-200: hsl(208, 39%, 80%);
+  --primary-300: hsl(208, 39%, 70%);
+  --primary-400: hsl(208, 39%, 60%);
+  --primary-500: hsl(208, 39%, 50%);
+  --primary-600: hsl(208, 39%, 40%);
+  --primary-700: hsl(208, 39%, 30%);
+  --primary-800: hsl(209, 39%, 20%);
+  --primary-900: hsl(208, 37%, 10%);
+  --primary-950: hsl(210, 38%, 5%);
+  
+  --secondary-50: hsl(208, 60%, 95%);
+  --secondary-100: hsl(209, 57%, 90%);
+  --secondary-200: hsl(208, 59%, 80%);
+  --secondary-300: hsl(208, 58%, 70%);
+  --secondary-400: hsl(208, 58%, 60%);
+  --secondary-500: hsl(208, 58%, 50%);
+  --secondary-600: hsl(208, 58%, 40%);
+  --secondary-700: hsl(208, 58%, 30%);
+  --secondary-800: hsl(208, 59%, 20%);
+  --secondary-900: hsl(209, 57%, 10%);
+  --secondary-950: hsl(208, 60%, 5%);
+  
+  --accent-50: hsl(208, 76%, 95%);
+  --accent-100: hsl(208, 76%, 90%);
+  --accent-200: hsl(208, 76%, 80%);
+  --accent-300: hsl(208, 76%, 70%);
+  --accent-400: hsl(208, 76%, 60%);
+  --accent-500: hsl(208, 76%, 50%);
+  --accent-600: hsl(208, 76%, 40%);
+  --accent-700: hsl(208, 76%, 30%);
+  --accent-800: hsl(208, 76%, 20%);
+  --accent-900: hsl(208, 76%, 10%);
+  --accent-950: hsl(208, 76%, 5%);
+  
+  --linearPrimarySecondary: linear-gradient(#95b5d1, #21517b);
+  --linearPrimaryAccent: linear-gradient(#95b5d1, #3f98e5);
+  --linearSecondaryAccent: linear-gradient(#21517b, #3f98e5);
+  --radialPrimarySecondary: radial-gradient(#95b5d1, #21517b);
+  --radialPrimaryAccent: radial-gradient(#95b5d1, #3f98e5);
+  --radialSecondaryAccent: radial-gradient(#21517b, #3f98e5);
+
+}
+
+html, body {
+  font-family: 'Inter';
+  font-weight: 400;
+  height: 100dvh;
+  width: 100dvw;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(238deg, var(--background-900), var(--background-800));
+}
