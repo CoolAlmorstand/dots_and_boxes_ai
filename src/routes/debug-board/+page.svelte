@@ -7,14 +7,7 @@
   let scoreCardRef;
 </script>
 
-<style>
-  main {
-    padding-top: 30px;
-  }
-  
-</style>
-
-<main class="flex-col align-center justify-start border-box">
+<main class="flex flex-col items-center justify-start gap-2.5 pt-[30px]">
   <ScoreCard bind:this={scoreCardRef} />
   <Board on:scoreUpdate={(event) =>  scoreCardRef.updateScore(event.detail.score) } />
 </main>

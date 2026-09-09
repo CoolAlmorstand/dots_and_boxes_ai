@@ -72,7 +72,7 @@
     line.adjacentBoxes.forEach( (box) => {
       if(box.state == "team1"){
         const { col, row } = box
-        boxes[row][col].setBackgroundColor("var(--secondary-500)")
+        boxes[row][col].setBackgroundColor("var(--color-secondary-500)")
         dispatch("scoreUpdate", {score: board.score})
       }
       if(box.state == "team2"){
@@ -83,7 +83,7 @@
     })
     
     if(lastClickedLine){
-      lastClickedLine.setBackgroundColor("var(--text-100)")
+      lastClickedLine.setBackgroundColor("var(--color-text-100)")
     }
     
     lastClickedLine = uiLine
@@ -99,19 +99,7 @@
   
 </script>
 
-
-<style>
-  
-  main {
-    margin-top: 50px;
-    position: relative;
-    max-width: 95%;
-    border-radius: 20px;
-    background-color: var(--background-800);
-  }
-</style>
-
-<main style="width: {width}px; height: {height}px" class="overflow border-box">
+<main style="width: {width}px; height: {height}px" class="relative mt-[50px] max-w-[95%] overflow-auto rounded-[20px] bg-background-800 scrollbar-none">
   <!-- add boxes -->
   {#each Array(rows) as _, row}
     {#each Array(cols) as _, col}
