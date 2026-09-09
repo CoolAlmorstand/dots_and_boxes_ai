@@ -1,12 +1,12 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite';
 import path from 'path';
 
 export default defineConfig({
   logLevel: 'warn',
   resolve: {
     alias: [
-      { find: '$styles', replacement: path.resolve(__dirname, 'src/styles') },
       { find: '$algorithm', replacement: path.resolve(__dirname, 'src/algorithm') }
     ]
   },
@@ -15,5 +15,5 @@ export default defineConfig({
       overlay: true
     }
   },
-  plugins: [sveltekit()]
+  plugins: [sveltekit(), tailwindcss()]
 });

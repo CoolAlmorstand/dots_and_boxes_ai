@@ -12,20 +12,6 @@
 </script>
 
 
-<style>
-  main {
-    height: 30px;
-    padding: 0 7px 0 7px;
-    border-radius: 10px;
-    background-color: var(--background-800);
-    color: var(--text-100);
-  }
-  
-  h5 {
-    margin: 0;
-  }
-</style>
-
-<main class="flex-col border-box justify-center">
-  <h5>Score: {score}</h5>
+<main class="flex h-[30px] flex-col justify-center gap-2.5 rounded-[10px] bg-background-800 px-[7px] text-text-100">
+  <h5 class="m-0">Score: {score}</h5>
 </main>

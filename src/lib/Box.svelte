@@ -10,21 +10,12 @@
   export function setBackgroundColor(color){
     
     if(color == "default"){
-      main.style.backgroundColor = "var(--background-800)"
+      main.style.backgroundColor = "var(--color-background-800)"
     }
     main.style.backgroundColor = color
   }
 </script>
 
-<style>
-  main {
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    background-color: var(--background-800);
-  }
-</style>
-
-<main bind:this={main} style="top: {offsetTop}px; left: {offsetLeft}px;" >
+<main bind:this={main} class="absolute h-[50px] w-[50px] bg-background-800" style="top: {offsetTop}px; left: {offsetLeft}px;" >
   
 </main>
